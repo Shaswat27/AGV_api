@@ -7,6 +7,8 @@
 #define MONOCAMDATA_HPP
 
 #include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
 
 class MonoCamData{
 	cv::Mat image;
@@ -20,7 +22,7 @@ class MonoCamData{
 		cv:Mat getImage();
 
 		//set image
-		cv:Mat setImage(cv::Mat img);
+		void setImage(cv::Mat img);
 };
 
 #endif

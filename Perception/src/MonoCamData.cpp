@@ -1,4 +1,8 @@
-#include "include/MonoCamData"
+/*
+	Class definition for monocular camera data type
+*/
+
+#include "../include/MonoCamData.hpp"
 
 MonoCamData::MonoCamData(){}
 
@@ -7,12 +11,12 @@ MonoCamData::MonoCamData(cv::Mat new_image)
 	image = new_image;
 }
 
-MonoCamData::getImage()
+cv::Mat MonoCamData::getImage()
 {
 	return image;
 }
 
-MonoCamData::setImage(cv::Mat img)
+void MonoCamData::setImage(cv::Mat img)
 {
 	image = img;
 }
