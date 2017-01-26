@@ -9,6 +9,7 @@ Author: Shaswat Datta
 #include <opencv2/core/core.hpp>
 #include <pcl/point_types.h>
 #include <pcl/PCLPointCloud2.h>
+#include <pcl/common/projection_matrix.h>
 
 class StereoCamData{
 	//left images (raw and rectified)

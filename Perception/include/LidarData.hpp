@@ -6,8 +6,9 @@
 #ifndef LIDARDATA_HPP
 #define LIDARDATA_HPP
 
-#include <pcl/point_types.hpp>
+#include <pcl/point_types.h>
 #include <pcl/PCLPointCloud2.h>
+#include <pcl/common/projection_matrix.h>
 
 class LidarData{
 

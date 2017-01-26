@@ -4,7 +4,7 @@
 
 #include "../include/LidarData.hpp"
 
-LidarData::LidarData();
+LidarData::LidarData() {}
 
 LidarData::LidarData(pcl::PointCloud<pcl::PointXYZI>::Ptr new_cloud)
 {

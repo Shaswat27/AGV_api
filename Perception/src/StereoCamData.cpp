@@ -1,7 +1,7 @@
 /*
 Function definition of StereoCamData class 
 */
-#include "include/StereoCamData.hpp"
+#include "../include/StereoCamData.hpp"
 
 //get left image
 cv::Mat StereoCamData::getRawLeft(){

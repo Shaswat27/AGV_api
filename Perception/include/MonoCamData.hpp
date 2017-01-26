@@ -19,7 +19,7 @@ class MonoCamData{
 		MonoCamData(cv::Mat new_image);
 
 		//get image data
-		cv:Mat getImage();
+		cv::Mat getImage();
 
 		//set image
 		void setImage(cv::Mat img);
