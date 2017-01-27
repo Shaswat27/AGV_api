@@ -2,7 +2,7 @@
 	Class definition for monocular camera data type
 */
 
-#include "../../include/Perception/MonoCamData.hpp"
+#include "Perception/MonoCamData.hpp"
 
 MonoCamData::MonoCamData(){}
 

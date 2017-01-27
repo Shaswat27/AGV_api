@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.6)
 project (AGV_api)
 include(CTest)
  
-include_directories(include/Perception)
+include_directories(include)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 

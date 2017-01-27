@@ -2,7 +2,7 @@
 	Class definition for lidar data type
 */
 
-#include "../../include/Perception/LidarData.hpp"
+#include "Perception/LidarData.hpp"
 
 LidarData::LidarData() {}
 
