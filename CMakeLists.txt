@@ -15,7 +15,8 @@ add_definitions(${PCL_DEFINITIONS})
 set(Perception_SOURCES
         src/Perception/MonoCamData.cpp
         src/Perception/LidarData.cpp
-	src/Perception/StereoCamData.cpp)
+	src/Perception/StereoCamData.cpp
+	src/Perception/LaneDetection.cpp)
 add_executable(myExecutable ${Perception_SOURCES})
 
 target_link_libraries(myExecutable ${OpenCV_LIBS})
