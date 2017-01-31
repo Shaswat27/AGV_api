@@ -16,9 +16,12 @@ set(Perception_SOURCES
         src/Perception/MonoCamData.cpp
         src/Perception/LidarData.cpp
 	src/Perception/StereoCamData.cpp
-	src/Perception/LaneDetection.cpp)
-add_executable(myExecutable ${Perception_SOURCES})
+	src/Perception/LaneDetection.cpp
+	src/Perception/ObjectData.cpp
+	src/Perception/ObjectDetection.cpp
+	src/Perception/TestClasses.cpp)
+add_executable(PereceptionClasses ${Perception_SOURCES})
 
-target_link_libraries(myExecutable ${OpenCV_LIBS})
-target_link_libraries(myExecutable ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES})
+target_link_libraries(PereceptionClasses ${OpenCV_LIBS})
+target_link_libraries(PereceptionClasses ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES})
 
