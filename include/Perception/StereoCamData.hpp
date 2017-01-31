@@ -3,8 +3,8 @@ Class for storing data for Stereo Camera
 Author: Shaswat Datta
 */
 
-#ifndef STEREOCAM_HPP
-#define STEREOCAM_HPP
+#ifndef STEREOCAMDATA_HPP
+#define STEREOCAMDATA_HPP
 
 #include <opencv2/core/core.hpp>
 #include <pcl/point_types.h>
