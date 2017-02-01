@@ -4,32 +4,44 @@
 
 #include "Perception/LaneDetection.hpp"
 
-MonoCamData LaneDetection::getMonoCam()
+template <class T>
+MonoCamData LaneDetection<T>::getMonoCam()
 {
 	return mono_cam;
 }
 
-StereoCamData LaneDetection::getStereoCam()
+template <class T>
+StereoCamData LaneDetection<T>::getStereoCam()
 {
 	return stereo_cam;
 }
 
-LidarData LaneDetection::getLidar()
+template <class T>
+LidarData LaneDetection<T>::getLidar()
 {
 	return lidar;
 }
 
-void LaneDetection::setMonoCam(MonoCamData m_cam)
+template <class T>
+std::vector<T> LaneDetection<T>::getLanes()
+{
+	return lanes;
+}
+
+template <class T>
+void LaneDetection<T>::setMonoCam(MonoCamData m_cam)
 {
 	mono_cam = m_cam;
 }
 
-void LaneDetection::setStereoCam(StereoCamData s_cam)
+template <class T>
+void LaneDetection<T>::setStereoCam(StereoCamData s_cam)
 {
 	stereo_cam = s_cam;
 }
 
-void LaneDetection::setLidar(LidarData ld)
+template <class T>
+void LaneDetection<T>::setLidar(LidarData ld)
 {
 	lidar = ld;
 }

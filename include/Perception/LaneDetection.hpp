@@ -10,6 +10,9 @@
 #include "StereoCamData.hpp"
 #include "LidarData.hpp"
 
+#include <vector>
+
+template <class T>
 class LaneDetection{
 
 	//Input data members
@@ -17,11 +20,16 @@ class LaneDetection{
 	StereoCamData &stereo_cam;
 	LidarData &lidar;
 
+	//Final lanes (Maybe collection of pixels or point cloud data)
+	std::vector<T> lanes;
+
 	public:
 		//Accessor functions
 		MonoCamData getMonoCam();
 		StereoCamData getStereoCam();
 		LidarData getLidar();
+
+		std::vector<T> getLanes();
 
 		//Mutator functions
 		void setMonoCam(MonoCamData m_cam);
